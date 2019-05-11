@@ -1,18 +1,20 @@
-package main
+package cases
 
 import (
 	"fmt"
 	"strconv"
 )
 
-var num int
-var i int
-var k int64
-var f float64
-var s string
-var err error
+var (
+	num int
+    i int
+    k int64
+    f float64
+    s string
+    err error
+)
 
-func main() {
+func Casting() {
 	fmt.Sscanf("57", "%d", &num)
 	i, err = strconv.Atoi("350") // i == 350
 	k, err = strconv.ParseInt("cc7fdd", 16, 32)
